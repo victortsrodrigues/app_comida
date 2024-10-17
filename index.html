@@ -17,6 +17,19 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="escondido">
+    <div class="informacoes_pedido">
+      <p>Confirme seu pedido</p>
+      <p class="prato_confirmado"></p>
+      <p class="bebida_confirmada"></p>
+      <p class="sobremesa_confirmada"></p>
+      <p class="total_calculado"></p>
+      <a class="pedido_wpp" href="https://wa.me/5517991072727" target="_blank">
+        Tudo certo, pode pedir!
+      </a>
+      <button class="cancelar" onclick="cancelarFunc()">Cancelar</button>
+    </div>
+  </div>
   <div class="header">
     <p>DrivenEats</p>
     <p>Sua comida em 6 minutos</p>
@@ -27,21 +40,21 @@
       <div class="opcoes">
         <div class="opcao" onclick="selecionadoPrato(this)">
           <img src="imagens/pf.png" />
-          <p>Frango Yin Yang</p>
+          <p class="nome_prato">Frango</p>
           <p>Um pouco de batata, um pouco de salada</p>
-          <p>14.90</p>
+          <p class="preco_prato">14.90</p>
         </div>
         <div class="opcao laterais" onclick="selecionadoPrato(this)">
           <img src="imagens/pf.png" />
-          <p>Frango Yin Yang</p>
+          <p class="nome_prato">Churrasco</p>
           <p>Um pouco de batata, um pouco de salada</p>
-          <p>15.90</p>
+          <p class="preco_prato">15.90</p>
         </div>
         <div class="opcao" onclick="selecionadoPrato(this)">
           <img src="imagens/pf.png" />
-          <p>Frango Yin Yang</p>
+          <p class="nome_prato">Peixe</p>
           <p>Um pouco de batata, um pouco de salada</p>
-          <p>16.90</p>
+          <p class="preco_prato">16.90</p>
         </div>
       </div>
     </div>
@@ -50,21 +63,21 @@
       <div class="opcoes">
         <div class="opcao" onclick="selecionadoBebida(this)">
           <img src="imagens/coquinha.png" />
-          <p>Coquinha gelada</p>
+          <p class="nome_bebida">Coquinha gelada</p>
           <p>Lata 350ml</p>
-          <p>14.90</p>
+          <p class="preco_bebida">14.90</p>
         </div>
         <div class="opcao laterais" onclick="selecionadoBebida(this)">
           <img src="imagens/coquinha.png" />
-          <p>Coquinha gelada</p>
+          <p class="nome_bebida">Guaraná gelado</p>
           <p>Lata 350ml</p>
-          <p>15.90</p>
+          <p class="preco_bebida">15.90</p>
         </div>
         <div class="opcao" onclick="selecionadoBebida(this)">
           <img src="imagens/coquinha.png" />
-          <p>Coquinha gelada</p>
+          <p class="nome_bebida">Água com gás</p>
           <p>Lata 350ml</p>
-          <p>16.90</p>
+          <p class="preco_bebida">16.00</p>
         </div>
       </div>
     </div>
@@ -73,27 +86,27 @@
       <div class="opcoes">
         <div class="opcao" onclick="selecionadoSobremesa(this)">
           <img src="imagens/pudding.png" />
-          <p>Pudim</p>
+          <p class="nome_sobremesa">Pudim</p>
           <p>Apenas pudim</p>
-          <p>14.90</p>
+          <p class="preco_sobremesa">14.90</p>
         </div>
         <div class="opcao laterais final_conteudo" onclick="selecionadoSobremesa(this)">
           <img src="imagens/pudding.png" />
-          <p>Pudim</p>
+          <p class="nome_sobremesa">Bolo</p>
           <p>Apenas pudim</p>
-          <p>15.90</p>
+          <p class="preco_sobremesa">15.90</p>
         </div>
         <div class="opcao" onclick="selecionadoSobremesa(this)">
           <img src="imagens/pudding.png" />
-          <p>Pudim</p>
+          <p class="nome_sobremesa">Sorvete</p>
           <p>Apenas pudim</p>
-          <p>16.90</p>
+          <p class="preco_sobremesa">16.90</p>
         </div>
       </div>
     </div>
   </div>
   <div class="footer">
-    <button class="botao">Selecione os 3 itens para fechar o pedido</button>
+    <button class="botao" onclick="confirmacao()">Selecione os 3 itens para fechar o pedido</button>
   </div>
   
 
