@@ -86,7 +86,7 @@ function confirmacao(){
   // Cria o url codificado
   let minhaString = `Olá, gostaria de fazer o pedido:\n - Prato: ${nomePrato}\n - Bebida: ${nomeBebida}\n - Sobremesa: ${nomeSobremesa}\nTotal: R$ ${totalArredondado}`;
   let textoCodificado = encodeURIComponent(minhaString)
-  document.querySelector('.pedido_wpp').href = `https://wa.me/5517991072727/?text=${textoCodificado}`;
+  document.querySelector('.pedido_wpp').href = `https://wa.me/5517991884457/?text=${textoCodificado}`;
   return textoCodificado
 }
 
