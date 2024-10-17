@@ -70,12 +70,48 @@ img {
   width: 172px;
   height: 216px;
   border-radius: 9px;
+  border: 5px solid #FFFFFF;
   margin-top: 17px;
-  /* margin-right: 16px; */
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 18px 14px 13px 14px;
+  padding: 13px 9px 8px 9px;
+}
+
+.selecionadoPrato {
+  width: 172px;
+  height: 216px;
+  border-radius: 9px;
+  border: 5px solid #32B72F;
+  margin-top: 17px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 9px 8px 9px;
+}
+
+.selecionadoBebida {
+  width: 172px;
+  height: 216px;
+  border-radius: 9px;
+  border: 5px solid #32B72F;
+  margin-top: 17px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 9px 8px 9px;
+}
+
+.selecionadoSobremesa {
+  width: 172px;
+  height: 216px;
+  border-radius: 9px;
+  border: 5px solid #32B72F;
+  margin-top: 17px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 9px 8px 9px;
 }
 
 .laterais {
@@ -159,6 +195,24 @@ img {
   height: 61px;
   border-radius: 50px;
   background-color: #CBCBCB;
+  padding-left: 80px;
+  padding-right: 80px;
+  border: none;
+}
+
+.botaoHabilitado{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 23.44px;
+  letter-spacing: 1.8%;
+  align-items: center;
+  justify-content: center;
+  width: 364px;
+  height: 61px;
+  border-radius: 50px;
+  background-color: #32B72F;
   padding-left: 80px;
   padding-right: 80px;
   border: none;
